@@ -1,0 +1,12 @@
+<h2>Usuarios</h2>
+
+<p>Total usuarios: {{ usuarios|length }}</p>
+
+<ul>
+{% for u in usuarios %}
+    <li>
+        <strong>{{ u.nombre }}</strong>
+        - {{ u.email }}
+    </li>
+{% endfor %}
+</ul>
